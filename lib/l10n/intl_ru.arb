@@ -1,0 +1,6 @@
+{
+  "githubUsers": "Пользователи Гитхаб",
+  "userDetailPage": "Страница пользователя",
+  "pageCurrentNPage": "Страница: {currentPage}",
+  "noInternet": "Нет соединения с интернетом"
+}

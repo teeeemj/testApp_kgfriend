@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:teeeemj_test/data/models/users_list_model.dart';
+import 'package:teeeemj_test/generated/l10n.dart';
 
 class UserDetail extends StatelessWidget {
   const UserDetail({super.key, required this.user});
@@ -13,9 +14,9 @@ class UserDetail extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.grey.shade600,
         centerTitle: true,
-        title: const Text(
-          'User Detail Page',
-          style: TextStyle(
+        title: Text(
+          S.of(context).userDetailPage,
+          style: const TextStyle(
             fontSize: 23,
             fontWeight: FontWeight.bold,
           ),

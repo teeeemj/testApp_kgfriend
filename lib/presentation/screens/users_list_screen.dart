@@ -2,6 +2,7 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:teeeemj_test/generated/l10n.dart';
 import 'package:teeeemj_test/presentation/bloc/users_bloc.dart';
 import 'package:teeeemj_test/presentation/screens/user_detail.dart';
 import 'package:teeeemj_test/presentation/widgets/current_page.dart';
@@ -16,9 +17,9 @@ class UsersListScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.grey.shade500,
         centerTitle: true,
-        title: const Text(
-          'GitHub Users',
-          style: TextStyle(
+        title: Text(
+          S.of(context).githubUsers,
+          style: const TextStyle(
             fontSize: 30,
             fontWeight: FontWeight.bold,
             color: Colors.black87,

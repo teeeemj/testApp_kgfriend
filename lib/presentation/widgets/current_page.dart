@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:teeeemj_test/generated/l10n.dart';
 
 class CurrentPage extends StatelessWidget {
   const CurrentPage({
@@ -13,7 +14,7 @@ class CurrentPage extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Text(
-        'Page: $currentPage',
+        S.of(context).pageCurrentNPage(currentPage),
         textAlign: TextAlign.center,
         style: const TextStyle(
           fontSize: 23,
